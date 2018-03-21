@@ -4,3 +4,5 @@ Concernant les méthodes de représentation des données,voici les différents N
 - "Affichage trajectoires 3D.ipynb" dont l'objectif est d'afficher la trajectoire d'une journée avec la latitude et la longitude en abcisses/ordonnées, et le temps selon l'axe des z.
 - "visu_test.ipynb" qui permet de représenter les trajectoires sous forme de "heatmap"
 - "Résidence.ipynb" qui permet d'afficher les points GPS correspondant à la zone des résidences Comparat et Adoma.
+- "Affichage+carte+W1+W1bis.ipynb" délimitation de zones par utilisation de droites
+- "zones pavés.ipynb" délimitation de zones pavées par utilisation d'une norme max
