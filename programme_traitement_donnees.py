@@ -9,6 +9,9 @@ Created on Wed Feb  7 15:51:49 2018
 import json
 import pandas as pd
 
+#Les lignes de code ci-dessus permettent de regrouper dans une seule et même liste de latitude l'ensemble des latitudes des participants
+#et dans une liste longitude l'ensemble des longitudes des participants
+
 L=[] #Cette liste est à compléter avec le nom des fichiers des différents participants ex: L=['Historique_theo.json','Historique_maude.json'...]
 lat,long,temps=[],[],[]
 for e in L:
@@ -25,6 +28,15 @@ for e in L:
             temps.append(t)
     f.close()
 
+#Pour la représentation graphique sur une carte
+datafile3 = 'carte_centrale_petite.png'
+img3 = plt.imread(datafile3)
+plt.scatter(long,lat)
+plt.axis('normal')
+plt.axis.xlim = 7.55*1.4
+plt.axis.ylim = 6.84*1.4
+plt.imshow(img3,zorder=0,extent = [4.76471,4.77209,45.78041,45.78603])
+plt.show()
 
 
 def zone_labo(long,lat,temps):
