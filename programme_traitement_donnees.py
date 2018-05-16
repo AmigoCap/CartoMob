@@ -9,7 +9,7 @@ Created on Wed Feb  7 15:51:49 2018
 import json
 import pandas as pd
 
-L=[]
+L=[] #Cette liste est à compléter avec le nom des fichiers des différents participants ex: L=['Historique_theo.json','Historique_maude.json'...]
 lat,long,temps=[],[],[]
 for e in L:
     f=open(e)
