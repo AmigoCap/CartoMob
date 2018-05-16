@@ -29,9 +29,10 @@ for e in L:
     f.close()
 
 #Pour la représentation graphique sur une carte
+plt.clf()   
 datafile3 = 'carte_centrale_petite.png'
 img3 = plt.imread(datafile3)
-plt.scatter(long,lat)
+plt.scatter(long,lat,marker='.',linewidths=1e-5)
 plt.axis('normal')
 plt.axis.xlim = 7.55*1.4
 plt.axis.ylim = 6.84*1.4
